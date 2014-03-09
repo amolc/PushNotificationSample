@@ -44,7 +44,7 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
         var pushNotification = window.plugins.pushNotification;
-		pushNotification.register(app.successHandler, app.errorHandler,onNotificationGCM,{"senderID":"588871792231","ecb":"app.onNotificationGCM"});
+		pushNotification.register(app.successHandler, app.errorHandler,{"senderID":"588871792231","ecb":"app.onNotificationGCM"});
         console.log('Received Event: ' + id);
     },
     
